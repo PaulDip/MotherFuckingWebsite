@@ -1,1 +1,165 @@
-dev
+.portfolio-item {
+  position: fixed;
+  left: calc(50% - 225px);
+  width: 450px;
+  height: 450px;
+  top: calc(50% - 225px);
+  overflow:hidden;
+   -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+      background: #94c5eb;
+  z-index: 4;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  animation: portfolio-fadein 4s cubic-bezier(1,0,0,1) forwards; 
+}
+
+.portfolio-item.animate {
+   right: calc(40% - 230px);
+}
+
+.dount {
+   width: 225px;
+    height: 225px;
+     
+    background: #ffffff;
+    position: absolute;
+    z-index:11;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+     top: calc(50% - 110px);
+    -webkit-clip-path: circle(50% at 50% 50%);
+clip-path: circle(50% at 50% 50%);
+    /*animation: portfolio-fadein-over 2s cubic-bezier(1, 0, 0, 1) forwards;
+     animation-delay: 4s;*/
+    
+}
+.portfolio-shape-cover {
+     width: 225px;
+    height: 225px;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    background: #fff;
+    z-index: 12;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        animation: ooover 300ms linear forwards;
+
+}
+
+@keyframes ooover {
+    0% {
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    50% {-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);}
+  100% {
+     
+      -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+  }
+}
+
+.portfolio-item img {
+    opacity: 1;
+    position: absolute;
+    left: -20%;
+    top: -20%;
+ height: 150%;
+
+}
+
+
+
+.portfolio-shape-cover2 {
+     width: 225px;
+    height: 225px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    background: #fff;
+    z-index: 12;
+ -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        animation: over2 400ms linear forwards;
+  animation-delay: 400ms;
+  }
+
+@keyframes over2 {
+    0% {
+     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    50% {-webkit-clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);}
+  100% {
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 0 100%, 100% 100%, 0% 100%);
+  }
+}
+
+
+
+.portfolio-shape-cover3 {
+     width: 225px;
+    height: 225px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 12;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        animation: over3 400ms linear forwards;
+  animation-delay: 800ms;
+
+}
+
+@keyframes over3 {
+     0% {
+       
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    50% {
+ -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+  }
+  100% {
+ -webkit-clip-path: polygon(100% 100%, 100% 0, 100% 100%, 100% 100%);
+clip-path: polygon(100% 100%, 100% 0, 100% 100%, 100% 100%);
+  }
+}
+
+
+.portfolio-shape-cover4 {
+     width: 225px;
+    height: 225px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    z-index: 12;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        animation: over4 400ms cubic-bezier(0,0,1,1) forwards;
+  animation-delay: 1200ms;
+}
+
+@keyframes over4 {
+     0% {
+       
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    50% {
+ -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  }
+  100% {
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+  }
+}
